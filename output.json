@@ -1,0 +1,11 @@
+go run main.go get --url '<url>' --headers '<authorization>'
+{
+        "httpStatusCode": 401,
+        "responseCode": 15,
+        "responseMessage": {
+                "title": "Invalid Access Token",
+                "actionMessage": ""
+        },
+        "hasError": true,
+        "data": null
+}
