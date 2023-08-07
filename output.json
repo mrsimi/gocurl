@@ -1,11 +1,9 @@
-go run main.go get --url '<url>' --headers '<authorization>'
+go run main.go post \
+--url 'https://jsonplaceholder.typicode.com/posts' \
+--data '{"title":"Post title", "body":"Post description", "userId":1}'
 {
-        "httpStatusCode": 401,
-        "responseCode": 15,
-        "responseMessage": {
-                "title": "Invalid Access Token",
-                "actionMessage": ""
-        },
-        "hasError": true,
-        "data": null
+        "title": "Post title",
+        "body": "Post description",
+        "userId": 1,
+        "id": 101
 }

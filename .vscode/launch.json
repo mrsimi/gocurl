@@ -10,8 +10,9 @@
             "request": "launch",
             "mode": "auto",
             "program": "${workspaceFolder}",
-            "args": ["get", "--url", "<url>", "--headers", 
-                "Authorization: Bearer <token>"]
+            "args": ["post", "--url", "https://jsonplaceholder.typicode.com/posts", 
+                            "--data", "<request_body>"
+                            ]
         }
     ]
 }

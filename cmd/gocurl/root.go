@@ -10,6 +10,7 @@ import (
 
 var url string
 var headers []string
+var data string
 
 var rootCmd = &cobra.Command{
 	Use: "gocurl [request type]",
@@ -20,7 +21,7 @@ it is command-line tool for getting or sending data including files using URL sy
 
 	Run: func(cmd *cobra.Command, args []string) {
 		requestType := args[0];
-		result := gocurl.ApiRequest(requestType, url, headers)
+		result := gocurl.ApiRequest(requestType, url, headers, data)
 		fmt.Println(result)
 	},
 }
@@ -29,6 +30,7 @@ func Execute(){
 	//setting all the flags
 	rootCmd.Flags().StringVarP(&url, "url", "u", "", "resource url")
 	rootCmd.Flags().StringSliceVarP(&headers, "headers", "x", []string{}, "")
+	rootCmd.Flags().StringVarP(&data, "data", "d", "", "resource data")
 
 	if err := rootCmd.Execute(); err != nil{
 		fmt.Fprintln(os.Stderr, "Whopps. There was an error while executing your CLI '%s'", err)
