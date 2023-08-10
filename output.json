@@ -1,9 +1,8 @@
-go run main.go post \
---url 'https://jsonplaceholder.typicode.com/posts' \
---data '{"title":"Post title", "body":"Post description", "userId":1}'
+gocurl GET \
+--url 'https://jsonplaceholder.typicode.com/posts/1'
 {
-        "title": "Post title",
-        "body": "Post description",
-        "userId": 1,
-        "id": 101
+	"userId": 1,
+	"id": 1,
+	"title": "sunt aut facere repellat...",
+	"body": "quia et suscipit\nsuscipit recusandae consequuntur.."
 }
