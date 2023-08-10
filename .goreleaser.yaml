@@ -33,6 +33,9 @@ brews:
     name: gocurl 
     goarm: 6
     goamd64: v1
+    tap: 
+      owner: mrsimi
+      name: homebrew-gocurl
     commit_author:
       name: mrsimi
       email: adegokesimi@gmail.com
