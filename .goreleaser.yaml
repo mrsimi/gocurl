@@ -38,7 +38,6 @@ brews:
     commit_author:
       name: mrsimi
       email: adegokesimi@gmail.com
-    folder: Formula
 
 checksum:
   name_template: 'checksums.txt'
