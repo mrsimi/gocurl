@@ -8,17 +8,17 @@ class Gocurl < Formula
   version "1.2"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/mrsimi/gocurl/releases/download/v1.2/gocurl_Darwin_arm64.tar.gz"
-      sha256 "5575de17e9434abd33a78a11c42dab557b602318e99b2dba023b99214ac28e13"
+    if Hardware::CPU.intel?
+      url "https://github.com/mrsimi/gocurl/releases/download/v1.2/gocurl_Darwin_x86_64.tar.gz"
+      sha256 "be0b90a80b5d618d06512360b7fbe3c2dd53137143c507517c499aecad4482ea"
 
       def install
         bin.install "gocurl"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/mrsimi/gocurl/releases/download/v1.2/gocurl_Darwin_x86_64.tar.gz"
-      sha256 "391c8a1e51a9ed0bdbb060b2a83ab5593c769c850ca85b171c3f01105e6b0b25"
+    if Hardware::CPU.arm?
+      url "https://github.com/mrsimi/gocurl/releases/download/v1.2/gocurl_Darwin_arm64.tar.gz"
+      sha256 "e04bd9ec37efe4237814189980c09cf312a673e0b5f54e97185a2de6eda2fc2b"
 
       def install
         bin.install "gocurl"
@@ -29,7 +29,7 @@ class Gocurl < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/mrsimi/gocurl/releases/download/v1.2/gocurl_Linux_arm64.tar.gz"
-      sha256 "4602e06204ae68c2c7cde0bea9ac97aa8391fa57bb2b786e71a376e1e8a45dfd"
+      sha256 "1f308e281483121a20c5040cebad1d7fab0403ecf9648ea6005c81db5b68d5dc"
 
       def install
         bin.install "gocurl"
@@ -37,7 +37,7 @@ class Gocurl < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/mrsimi/gocurl/releases/download/v1.2/gocurl_Linux_x86_64.tar.gz"
-      sha256 "c6bafb74518a0cad37e34e6207567d3d6fd000ad1c2e5c704bb98687b16751be"
+      sha256 "8dc7fc8913bd116cd314e3b3bbd72b330fd1e8bf6de94de2f8066cd829f202b7"
 
       def install
         bin.install "gocurl"
