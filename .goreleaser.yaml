@@ -33,7 +33,7 @@ brews:
     name: gocurl 
     goarm: 6
     goamd64: v1
-    tap: 
+    repository: 
       owner: mrsimi
       name: homebrew-gocurl
     commit_author:
