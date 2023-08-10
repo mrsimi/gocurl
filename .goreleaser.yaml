@@ -29,15 +29,16 @@ archives:
     - goos: windows
       format: zip
 brews:
-  - name: gocurl
-    description: GoCurl is a command-line tool written in Golang that serves as a lite clone of the popular cURL utility
-    homepage: https://github.com/mrsimi/gocurl
-    tap:
-      owner: mrsimi
-      name: homebrew-gocurl
+  -
+    name: gocurl 
+    goarm: 6
+    goamd64: v1
     commit_author:
       name: mrsimi
       email: adegokesimi@gmail.com
+    folder: Formula
+    description: "A golang HTTP curl-like tool"
+    homepage: "https://github.com/mrsimi/gocurl"
 
 checksum:
   name_template: 'checksums.txt'
