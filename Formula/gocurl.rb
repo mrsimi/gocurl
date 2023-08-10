@@ -5,20 +5,20 @@
 class Gocurl < Formula
   desc "A golang HTTP curl-like tool"
   homepage "https://github.com/mrsimi/gocurl"
-  version "1.3"
+  version "1.0"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/mrsimi/gocurl/releases/download/v1.3/gocurl_Darwin_arm64.tar.gz"
-      sha256 "08c23fe0aa5845273b733b8fd872c8684026d8d6d22f1dba3ee47c82272f05a6"
+    if Hardware::CPU.intel?
+      url "https://github.com/mrsimi/gocurl/releases/download/v1.0/gocurl_Darwin_x86_64.tar.gz"
+      sha256 "e193bea0dc93a1b0b113cc494fb7e8c6ed964316a614538697aec0b5d3a16843"
 
       def install
         bin.install "gocurl"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/mrsimi/gocurl/releases/download/v1.3/gocurl_Darwin_x86_64.tar.gz"
-      sha256 "6e7d9caa896df0729619dfd2f3b1ef9b755f73f475f94e3f5fc9a2d9da7f1d47"
+    if Hardware::CPU.arm?
+      url "https://github.com/mrsimi/gocurl/releases/download/v1.0/gocurl_Darwin_arm64.tar.gz"
+      sha256 "4b9d2a016ba977956cf8e13e61cd56bb16f05d9a8303c614ac066e5a85d7c997"
 
       def install
         bin.install "gocurl"
@@ -28,16 +28,16 @@ class Gocurl < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mrsimi/gocurl/releases/download/v1.3/gocurl_Linux_arm64.tar.gz"
-      sha256 "29b640f9f08b5c847d5559a35a164a0a733e7f6ee37f21cdc2b7695971ab2033"
+      url "https://github.com/mrsimi/gocurl/releases/download/v1.0/gocurl_Linux_arm64.tar.gz"
+      sha256 "0bd3d58eb60f76158cae4064eb63455f54b415d4ea93fce445fcb9c734daaca6"
 
       def install
         bin.install "gocurl"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/mrsimi/gocurl/releases/download/v1.3/gocurl_Linux_x86_64.tar.gz"
-      sha256 "fec4c95c22ab30e6ee4076e81aee150ab590f1387eb6bda640ab301697ae77bd"
+      url "https://github.com/mrsimi/gocurl/releases/download/v1.0/gocurl_Linux_x86_64.tar.gz"
+      sha256 "704a17ee9c1cff9a8410998b669f39bb372d22f836748912c22900894ecf01d6"
 
       def install
         bin.install "gocurl"
