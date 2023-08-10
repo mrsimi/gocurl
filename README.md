@@ -2,7 +2,7 @@
 
 GoCurl is a command-line tool written in Golang that serves as a lite clone of the popular cURL utility. It will allow users to perform HTTP and HTTPS operations from the command line, just like cURL, but with the added benefits of being written in the efficient and modern Go programming language.
 
-## Current Features
+## Features
 - [x] Perform HTTP(S) GET, POST, PUT, DELETE etc. requests with body and url.
 - [x] Pass header parameters to requets
 - [x] Pretty Print of JSON to command-line
