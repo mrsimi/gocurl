@@ -12,7 +12,7 @@ GoCurl is a command-line tool written in Golang that serves as a lite clone of t
 
 `gocurl` is available via [Homebrew](https://brew.sh/) and as a downloadable binary from the [release page](https://github.com/mrsimi/gocurl/releases)
 
-To install using Homebrew 
+### To install using Homebrew 
 
 ```
 brew tap mrsimi/mrsimi
@@ -23,6 +23,13 @@ For the help dialogue
 ```
 gocurl --help
 ```
+
+### To install on Windows/Linux
+Download the binary that matches your OS from [here](https://github.com/mrsimi/gocurl/releases)
+
+Then add the directory to Path in either Linux and Windows. For Windows you can use the Environment Variables GUI to edit the Path and add the directory path. 
+For Linux you can use bash file or the zsh file to aadd the path to directory. 
+
 
 Example 
 ![Screenshot of using the gocurl tool](assets/code.png)
