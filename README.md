@@ -19,19 +19,25 @@ brew tap mrsimi/mrsimi
 brew install mrsimi/mrsimi/gocurl
 ```
 
-For the help dialogue 
+### To install on Windows/Linux
+Download the binary that matches your OS from [here](https://github.com/mrsimi/gocurl/releases)
+
+Then add the directory to Path in either Linux and Windows. 
+
+For Windows you can use the Environment Variables GUI to edit the Path and add the directory path. 
+
+
+For Linux you can use bash file or the zsh file to aadd the path to directory. 
+
+
+## Running the tool 
+For showing the help dialogue. Run the command
 ```
 gocurl --help
 ```
 
-### To install on Windows/Linux
-Download the binary that matches your OS from [here](https://github.com/mrsimi/gocurl/releases)
+To Run a GET request for example
 
-Then add the directory to Path in either Linux and Windows. For Windows you can use the Environment Variables GUI to edit the Path and add the directory path. 
-For Linux you can use bash file or the zsh file to aadd the path to directory. 
-
-
-Example 
 ![Screenshot of using the gocurl tool](assets/code.png)
 
 
